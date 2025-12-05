@@ -1,0 +1,21 @@
+﻿  Building 'MyDriver5' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Debug\MyDriver5.inf
+  Stamping [Version] section with DriverVer=12/03/2025,9.19.44.797
+  MyDriver5.vcxproj -> C:\Users\Administrator\source\repos\MyDriver5\x64\Debug\MyDriver5.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Administrator\source\repos\MyDriver5\x64\Debug\MyDriver5.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\Administrator\source\repos\MyDriver5\x64\Debug\MyDriver5\mydriver5.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Administrator\source\repos\MyDriver5\x64\Debug\MyDriver5\mydriver5.cat
+  
