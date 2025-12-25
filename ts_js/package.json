@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@meting/core": "^1.6.0"
+  },
+  "type": "module"
+}

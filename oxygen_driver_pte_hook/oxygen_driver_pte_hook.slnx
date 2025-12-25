@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="oxygen_driver_pte_hook/oxygen_driver_pte_hook.vcxproj">
+    <Deploy />
+  </Project>
+</Solution>

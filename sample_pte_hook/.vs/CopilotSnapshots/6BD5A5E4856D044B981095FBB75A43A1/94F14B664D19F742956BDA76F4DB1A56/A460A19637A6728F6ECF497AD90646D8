@@ -1,0 +1,60 @@
+﻿#pragma once
+
+#include <cstdint>
+
+#define PAGE_SIZE 0x1000ULL
+
+// Minimal structures for PTE/PDE/PDPTE/PML4E 64-bit entries
+typedef union _PTE_64 {
+    uint64_t Flags;
+    struct {
+        uint64_t Present : 1;
+        uint64_t ReadWrite : 1;
+        uint64_t UserSupervisor : 1;
+        uint64_t PageWriteThrough : 1;
+        uint64_t PageCacheDisable : 1;
+        uint64_t Accessed : 1;
+        uint64_t Dirty : 1;
+        uint64_t PAT : 1;
+        uint64_t Global : 1;
+        uint64_t Ignored1 : 3;
+        uint64_t PageFrameNumber : 40;
+        uint64_t Reserved : 11;
+        uint64_t Nx : 1;
+    } Fields;
+} pte_64, pde_64, pdpte_64, pml4e_64;
+
+// CR3 structure
+typedef union _CR3 {
+    uint64_t flags;
+    struct {
+        uint64_t Reserved1 : 3;
+        uint64_t PageWriteThrough : 1;
+        uint64_t PageCacheDisable : 1;
+        uint64_t Reserved2 : 7;
+        uint64_t AddressOfPageDirectory : 40; // PFN
+        uint64_t Reserved3 : 12;
+    } bits;
+} cr3;
+
+// helper to access field names used in cpp
+// provide compatible names
+
+// inline accessor for CR3 using intrin will be used in cpp
+
+extern "C" void __readcr3_dummy();
+
+inline cr3 read_cr3() {
+    cr3 r{0};
+#if defined(_MSC_VER)
+    r.flags = __readcr3();
+#else
+    unsigned long long val = 0;
+    asm volatile ("mov %%cr3, %0" : "=r" (val));
+    r.flags = val;
+#endif
+    return r;
+}
+
+// Provide prototype for pa_to_va usage in cpp (MmGetVirtualForPhysical is from WDK)
+

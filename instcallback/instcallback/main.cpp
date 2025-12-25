@@ -92,7 +92,7 @@ NTSTATUS set_instcallback(HANDLE process_id) {
 
 		//set instcall
 		status = ZwSetInfomationProcess(NtCurrentProcess(), ProcessInstrumentationCallback, &alloc_addr, sizeof(&alloc_addr));
-		if (!NT_SUCCESS(status)) DbgPrintEx(77, 0, "[+]设置instcall back出错了你妈的。\r\n");
+		if (!NT_SUCCESS(status)) DbgPrintEx(77, 0, "[+]设置instcall back出错了草你妈的。\r\n");
 		break;
 	}
 

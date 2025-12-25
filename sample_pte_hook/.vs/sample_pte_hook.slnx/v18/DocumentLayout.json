@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\\u6D4B\u8BD5\u5B66\u4E60\\sample_pte_hook\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A112FF31-4578-D9A8-A672-2B2CC1C26BB3}|sample_pte_hook\\sample_pte_hook.vcxproj|C:\\Users\\Administrator\\Desktop\\\u6D4B\u8BD5\u5B66\u4E60\\sample_pte_hook\\sample_pte_hook\\page_table_self_map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A112FF31-4578-D9A8-A672-2B2CC1C26BB3}|sample_pte_hook\\sample_pte_hook.vcxproj|solutionrelative:sample_pte_hook\\page_table_self_map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A112FF31-4578-D9A8-A672-2B2CC1C26BB3}|sample_pte_hook\\sample_pte_hook.vcxproj|C:\\Users\\Administrator\\Desktop\\\u6D4B\u8BD5\u5B66\u4E60\\sample_pte_hook\\sample_pte_hook\\ia32.hpp||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A112FF31-4578-D9A8-A672-2B2CC1C26BB3}|sample_pte_hook\\sample_pte_hook.vcxproj|solutionrelative:sample_pte_hook\\ia32.hpp||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ia32.hpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\\u6D4B\u8BD5\u5B66\u4E60\\sample_pte_hook\\sample_pte_hook\\ia32.hpp",
+              "RelativeDocumentMoniker": "sample_pte_hook\\ia32.hpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\\u6D4B\u8BD5\u5B66\u4E60\\sample_pte_hook\\sample_pte_hook\\ia32.hpp",
+              "RelativeToolTip": "sample_pte_hook\\ia32.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-30T02:31:21.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "page_table_self_map.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\\u6D4B\u8BD5\u5B66\u4E60\\sample_pte_hook\\sample_pte_hook\\page_table_self_map.cpp",
+              "RelativeDocumentMoniker": "sample_pte_hook\\page_table_self_map.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\\u6D4B\u8BD5\u5B66\u4E60\\sample_pte_hook\\sample_pte_hook\\page_table_self_map.cpp",
+              "RelativeToolTip": "sample_pte_hook\\page_table_self_map.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwB0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-30T01:42:40.506Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

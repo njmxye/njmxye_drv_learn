@@ -1,7 +1,7 @@
 #pragma once
-#include"structer.h"
-#include"MDL.h"
-#include"ia32/ia32.hpp"
+#include"../structer.h"
+#include"../MDL/MDL.h"
+#include"../ia32/ia32.hpp"
 
 class HookManager
 {

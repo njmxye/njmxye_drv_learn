@@ -6,11 +6,11 @@
 
 
 NTSTATUS MmLockVaForWrite(PVOID Va, ULONG Length, __out PREPROTECT_CONTEXT ReprotectContext)
-{   
+{   //自己写一个内存函数，作为IoAllocateMdl，MmProbeAndLockPages，GetExceptionCode，MmMapLockedPagesSpecifyCache，IoFreeMdl，MmProtectMdlSystemAddress，NT_SUCCESS，MmUnmapLockedPages，MmUnlockPages的上层封装
     NTSTATUS status;
-    status = STATUS_SUCCESS;
+    status = STATUS_SUCCESS;//加载驱动成功
 
-    ReprotectContext->Mdl = 0;
+    ReprotectContext->Mdl = 0;//创了一个mdl结构并清空
     ReprotectContext->Lockedva = 0;
     /*
     IoAllocateMdl：
@@ -18,18 +18,18 @@ NTSTATUS MmLockVaForWrite(PVOID Va, ULONG Length, __out PREPROTECT_CONTEXT Repro
         参数：通常需要传递要描述的内存区域的虚拟地址（Va）和长度（Length），以及其他参数如是否分配辅助表、是否从非分页池中分配等。
         使用场景：主要用于创建描述内存页信息的 MDL 结构，但并不进行内存页的映射操作。
     */
-    ReprotectContext->Mdl = IoAllocateMdl(Va, Length, FALSE, FALSE, NULL); //分配缓冲区
+    ReprotectContext->Mdl = IoAllocateMdl(Va, Length, FALSE, FALSE, NULL); //分配缓冲区申请了一块内存出来
 
     if (!ReprotectContext->Mdl) {
-        return STATUS_INSUFFICIENT_RESOURCES;
+        return STATUS_INSUFFICIENT_RESOURCES;//如果申请失败
     };
 
-    __try{
+    __try{//把容易异常的代码放到try中
         MmProbeAndLockPages(ReprotectContext->Mdl, KernelMode, IoWriteAccess); // access or  write 可能会蓝
     
     }
     __except(EXCEPTION_EXECUTE_HANDLER) {
-        return GetExceptionCode();
+        return GetExceptionCode();//捕获异常并返回异常处理接管seh防止蓝屏
     }
     /*
         MmMapLockedPagesSpecifyCache：

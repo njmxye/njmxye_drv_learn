@@ -1,0 +1,9 @@
+﻿  page_table_self_map.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\ntdef.h(197,1): error C1189: #error:  "No Target Architecture"
+  (编译源文件“page_table_self_map.cpp”)
+  
+  sample_pte_hook.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\ntdef.h(197,1): error C1189: #error:  "No Target Architecture"
+  (编译源文件“sample_pte_hook.cpp”)
+  
+  正在生成代码...

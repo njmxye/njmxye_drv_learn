@@ -1,0 +1,3 @@
+﻿  new_drv.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\wdm.h(25418,9): error C2220: 以下警告被视为错误
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\wdm.h(25418): warning C28301: “POOL_FLAGS”的第一个声明没有批注。 请参见 c:\program files (x86)\windows kits\10\include\10.0.26100.0\km\wdm.h(18173)。

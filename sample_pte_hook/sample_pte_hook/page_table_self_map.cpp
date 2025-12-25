@@ -1,0 +1,68 @@
+#include <ntifs.h>
+#include <ntddk.h>
+#include <intrin.h>
+#include "ia32.hpp"
+
+typedef struct _PAGE_TABLE {
+    uint64_t LineAddress;
+    pte_64* PteAddress;
+    pde_64* PdeAddress;
+    pdpte_64* PdpteAddress;
+    pml4e_64* Pml4eAddress;
+} PAGE_TABLE, *PPAGE_TABLE;
+
+
+
+uint64_t get_pte_address_by_va(uint64_t va) {
+    va &= 0x0000ffffffffffff;
+    auto offset = (va >> 12) << 3;
+    uint64_t pte_base = (uint64_t)get_pte_base();
+    return pte_base + offset;
+}
+
+uint64_t pa_to_va(uint64_t pa) {
+    PHYSICAL_ADDRESS pa_{ 0 };
+    pa_.QuadPart = pa;
+    return (uint64_t)MmGetVirtualForPhysical(pa_);
+}
+
+pte_64* get_pte_base() {
+    cr3 cr3_pa{ 0 };
+    cr3_pa.flags = __readcr3();
+    pml4e_64* cr3_va{ 0 };
+
+    cr3_va = (pml4e_64*)pa_to_va(cr3_pa.address_of_page_directory * PAGE_SIZE);
+
+    if (MmIsAddressValid(cr3_va) == FALSE) {
+        KdPrint(("[+]failed to get cr3 page\r\n"));
+        return 0;
+    }
+    for (uint64_t i = 0; i < 512; i++) {
+        if (cr3_va[i].page_frame_number == cr3_pa.address_of_page_directory) {
+            //find
+            return (pte_64*)(0xffff000000000000 | (i << 39));
+        }
+    }
+    return 0;
+}
+
+void get_page_table(PAGE_TABLE& table) {
+    auto va = table.LineAddress;
+    table.PteAddress = (pte_64*)get_pte_address_by_va(va);
+    table.PdeAddress = (pde_64*)(get_pte_address_by_va((uint64_t)table.PteAddress));
+    table.PdpteAddress = (pdpte_64*)get_pte_address_by_va((uint64_t)table.PdeAddress);
+    table.Pml4eAddress = (pml4e_64*)get_pte_address_by_va((uint64_t)table.PdpteAddress);
+}
+
+EXTERN_C NTSTATUS driverentry(PDRIVER_OBJECT, PUNICODE_STRING) {
+    auto pte_base = get_pte_base();
+
+    KdPrint(("[+]PteBase:%llx\r\n", pte_base));
+
+    PPAGE_TABLE table{ 0 };
+    table.LineAddress = 0;
+    get_page_table(table);
+    KdPrint(("[+]PteAddress:%llx,PdeAddress:%llx, PdpteAddress:%llx,Pml4eAddress:%llx\r\n",table.PteAddress, table.PdeAddress, table.PdpteAddress, table.Pml4eAddress ));
+
+    return STATUS_UNSUCCESSFUL;
+}

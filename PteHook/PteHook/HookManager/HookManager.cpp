@@ -1,7 +1,7 @@
 #include "HookManager.h"
 #include<intrin.h>
-#include"hde64.h"
-#include"PageTable.h"
+#include"../Hde/hde64.h"
+#include"../PageTable/PageTable.h"
 
 HookManager* HookManager::mInstance;
 

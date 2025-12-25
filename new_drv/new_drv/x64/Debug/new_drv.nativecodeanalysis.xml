@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\km\</FILEPATH>
+      <FILENAME>wdm.h</FILENAME>
+      <LINE>25418</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>28301</DEFECTCODE>
+    <DESCRIPTION>“POOL_FLAGS”的第一个声明没有批注。 请参见 c:\program files (x86)\windows kits\10\include\10.0.26100.0\km\wdm.h(18173)。</DESCRIPTION>
+    <FUNCTION></FUNCTION>
+    <DECORATED></DECORATED>
+    <FUNCLINE>0</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

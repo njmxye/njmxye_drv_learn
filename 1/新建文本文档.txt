@@ -1,0 +1,1119 @@
+<div id="aplayer-VbASGHkA" class="aplayer aplayer-tag-marker aplayer-withlrc aplayer-withlist" style="margin-bottom: 20px;">
+<div class="aplayer-body">
+    <div class="aplayer-pic" style="background-image: url(&quot;https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg&quot;);background-color: #e6d0b2;">
+        <div class="aplayer-button aplayer-play"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 31"><path d="M15.552 15.168q0.448 0.32 0.448 0.832 0 0.448-0.448 0.768l-13.696 8.512q-0.768 0.512-1.312 0.192t-0.544-1.28v-16.448q0-0.96 0.544-1.28t1.312 0.192z"></path></svg></div>
+    </div>
+    <div class="aplayer-info">
+        <div class="aplayer-music">
+            <span class="aplayer-title">难断</span>
+            <span class="aplayer-author"> - 寻</span>
+        </div>
+        <div class="aplayer-lrc">
+            <div class="aplayer-lrc-contents" style="transform: translateY(0); -webkit-transform: translateY(0);">
+    <p class="aplayer-lrc-current">Not available</p>
+</div>
+        </div>
+        <div class="aplayer-controller">
+            <div class="aplayer-bar-wrap">
+                <div class="aplayer-bar">
+                    <div class="aplayer-loaded" style="width: 100%;"></div>
+                    <div class="aplayer-played" style="width: 50.2218%; background: rgb(230, 208, 178);">
+                        <span class="aplayer-thumb" style="background: #e6d0b2;">
+                            <span class="aplayer-loading-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M4 16c0-6.6 5.4-12 12-12s12 5.4 12 12c0 1.2-0.8 2-2 2s-2-0.8-2-2c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8c1.2 0 2 0.8 2 2s-0.8 2-2 2c-6.6 0-12-5.4-12-12z"></path></svg></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="aplayer-time">
+                <span class="aplayer-time-inner">
+                    <span class="aplayer-ptime">01:38</span> / <span class="aplayer-dtime">03:16</span>
+                </span>
+                <span class="aplayer-icon aplayer-icon-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M25.468 6.947c-0.326-0.172-0.724-0.151-1.030 0.057l-6.438 4.38v-3.553c0-0.371-0.205-0.71-0.532-0.884-0.326-0.172-0.724-0.151-1.030 0.057l-12 8.164c-0.274 0.186-0.438 0.496-0.438 0.827s0.164 0.641 0.438 0.827l12 8.168c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-3.556l6.438 4.382c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-16.333c0-0.371-0.205-0.71-0.532-0.884z"></path></svg>
+                </span>
+                <span class="aplayer-icon aplayer-icon-play"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 31"><path d="M15.552 15.168q0.448 0.32 0.448 0.832 0 0.448-0.448 0.768l-13.696 8.512q-0.768 0.512-1.312 0.192t-0.544-1.28v-16.448q0-0.96 0.544-1.28t1.312 0.192z"></path></svg></span>
+                <span class="aplayer-icon aplayer-icon-forward">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M25.468 6.947c-0.326-0.172-0.724-0.151-1.030 0.057l-6.438 4.38v-3.553c0-0.371-0.205-0.71-0.532-0.884-0.326-0.172-0.724-0.151-1.030 0.057l-12 8.164c-0.274 0.186-0.438 0.496-0.438 0.827s0.164 0.641 0.438 0.827l12 8.168c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-3.556l6.438 4.382c0.169 0.115 0.365 0.174 0.562 0.174 0.16 0 0.321-0.038 0.468-0.116 0.327-0.173 0.532-0.514 0.532-0.884v-16.333c0-0.371-0.205-0.71-0.532-0.884z"></path></svg>
+                </span>
+                <div class="aplayer-volume-wrap">
+                    <button type="button" class="aplayer-icon aplayer-icon-volume-down"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28 32"><path d="M13.728 6.272v19.456q0 0.448-0.352 0.8t-0.8 0.32-0.8-0.32l-5.952-5.952h-4.672q-0.48 0-0.8-0.352t-0.352-0.8v-6.848q0-0.48 0.352-0.8t0.8-0.352h4.672l5.952-5.952q0.32-0.32 0.8-0.32t0.8 0.32 0.352 0.8zM20.576 16q0 1.344-0.768 2.528t-2.016 1.664q-0.16 0.096-0.448 0.096-0.448 0-0.8-0.32t-0.32-0.832q0-0.384 0.192-0.64t0.544-0.448 0.608-0.384 0.512-0.64 0.192-1.024-0.192-1.024-0.512-0.64-0.608-0.384-0.544-0.448-0.192-0.64q0-0.48 0.32-0.832t0.8-0.32q0.288 0 0.448 0.096 1.248 0.48 2.016 1.664t0.768 2.528z"></path></svg></button>
+                    <div class="aplayer-volume-bar-wrap">
+                        <div class="aplayer-volume-bar">
+                            <div class="aplayer-volume" style="height: 8%; background: rgb(230, 208, 178);"></div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="aplayer-icon aplayer-icon-order">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M0.622 18.334h19.54v7.55l11.052-9.412-11.052-9.413v7.549h-19.54v3.725z"></path></svg>
+                </button>
+                <button type="button" class="aplayer-icon aplayer-icon-loop">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 29 32"><path d="M9.333 9.333h13.333v4l5.333-5.333-5.333-5.333v4h-16v8h2.667v-5.333zM22.667 22.667h-13.333v-4l-5.333 5.333 5.333 5.333v-4h16v-8h-2.667v5.333z"></path></svg>
+                </button>
+                <button type="button" class="aplayer-icon aplayer-icon-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 22 32"><path d="M20.8 14.4q0.704 0 1.152 0.48t0.448 1.12-0.48 1.12-1.12 0.48h-19.2q-0.64 0-1.12-0.48t-0.48-1.12 0.448-1.12 1.152-0.48h19.2zM1.6 11.2q-0.64 0-1.12-0.48t-0.48-1.12 0.448-1.12 1.152-0.48h19.2q0.704 0 1.152 0.48t0.448 1.12-0.48 1.12-1.12 0.48h-19.2zM20.8 20.8q0.704 0 1.152 0.48t0.448 1.12-0.48 1.12-1.12 0.48h-19.2q-0.64 0-1.12-0.48t-0.48-1.12 0.448-1.12 1.152-0.48h19.2z"></path></svg>
+                </button>
+                <button type="button" class="aplayer-icon aplayer-icon-lrc">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M26.667 5.333h-21.333c-0 0-0.001 0-0.001 0-1.472 0-2.666 1.194-2.666 2.666 0 0 0 0.001 0 0.001v-0 16c0 0 0 0.001 0 0.001 0 1.472 1.194 2.666 2.666 2.666 0 0 0.001 0 0.001 0h21.333c0 0 0.001 0 0.001 0 1.472 0 2.666-1.194 2.666-2.666 0-0 0-0.001 0-0.001v0-16c0-0 0-0.001 0-0.001 0-1.472-1.194-2.666-2.666-2.666-0 0-0.001 0-0.001 0h0zM5.333 16h5.333v2.667h-5.333v-2.667zM18.667 24h-13.333v-2.667h13.333v2.667zM26.667 24h-5.333v-2.667h5.333v2.667zM26.667 18.667h-13.333v-2.667h13.333v2.667z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="aplayer-notice"></div>
+    <div class="aplayer-miniswitcher"><button class="aplayer-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path d="M22 16l-10.105-10.6-1.895 1.987 8.211 8.613-8.211 8.612 1.895 1.988 8.211-8.613z"></path></svg></button></div>
+</div>
+<div class="aplayer-list" style="max-height: 200px">
+    <ol style="max-height: 200px">
+        
+<li class="aplayer-list-light">
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">1</span>
+    <span class="aplayer-list-title">难断</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">2</span>
+    <span class="aplayer-list-title">吹灭小山河</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">3</span>
+    <span class="aplayer-list-title">3 Strikes</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">4</span>
+    <span class="aplayer-list-title">ALL MY PEOPLE</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">5</span>
+    <span class="aplayer-list-title">After The Wind</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">6</span>
+    <span class="aplayer-list-title">All For Love</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">7</span>
+    <span class="aplayer-list-title">Baby love you</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">8</span>
+    <span class="aplayer-list-title">Constant Moderato</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">9</span>
+    <span class="aplayer-list-title">Dancing With Your Ghost</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">10</span>
+    <span class="aplayer-list-title">Daylight</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">11</span>
+    <span class="aplayer-list-title">Different Lives (Explicit)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">12</span>
+    <span class="aplayer-list-title">Dreamer</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">13</span>
+    <span class="aplayer-list-title">Drown (feat. Clinton Kane)(Alle Farben Remix)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">14</span>
+    <span class="aplayer-list-title">Fearless Pt. II</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">15</span>
+    <span class="aplayer-list-title">Fractures</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">16</span>
+    <span class="aplayer-list-title">Home (Radio Edit)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">17</span>
+    <span class="aplayer-list-title">Lose Control</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">18</span>
+    <span class="aplayer-list-title">MONTAGEM XONADA</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">19</span>
+    <span class="aplayer-list-title">Meant To Be</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">20</span>
+    <span class="aplayer-list-title">Minor Forever</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">21</span>
+    <span class="aplayer-list-title">Montagem Nada Tropica</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">22</span>
+    <span class="aplayer-list-title">Power</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">23</span>
+    <span class="aplayer-list-title">Sacred Play Secret Place</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">24</span>
+    <span class="aplayer-list-title">Save Me</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">25</span>
+    <span class="aplayer-list-title">Secret Labs</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">26</span>
+    <span class="aplayer-list-title">Taped Up Heart (feat. Clara Mae)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">27</span>
+    <span class="aplayer-list-title">The Hills (Slap House Mix)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">28</span>
+    <span class="aplayer-list-title">WHOOPTY (Remix)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">29</span>
+    <span class="aplayer-list-title">aLIEz</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">30</span>
+    <span class="aplayer-list-title">おはなばたけ</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">31</span>
+    <span class="aplayer-list-title">三拜红尘凉</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">32</span>
+    <span class="aplayer-list-title">不是相思是离别</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">33</span>
+    <span class="aplayer-list-title">东南西北中</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">34</span>
+    <span class="aplayer-list-title">乘风游</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">35</span>
+    <span class="aplayer-list-title">人间惊鸿宴</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">36</span>
+    <span class="aplayer-list-title">人间烟火</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">37</span>
+    <span class="aplayer-list-title">今世债</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">38</span>
+    <span class="aplayer-list-title">他乡的月亮</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">39</span>
+    <span class="aplayer-list-title">伴你成长</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">40</span>
+    <span class="aplayer-list-title">你的答案</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">41</span>
+    <span class="aplayer-list-title">使一颗心免于哀伤</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">42</span>
+    <span class="aplayer-list-title">关山酒 (DJ版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">43</span>
+    <span class="aplayer-list-title">关山酒</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">44</span>
+    <span class="aplayer-list-title">其实都没有</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">45</span>
+    <span class="aplayer-list-title">冬眠</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">46</span>
+    <span class="aplayer-list-title">冬眠·2023</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">47</span>
+    <span class="aplayer-list-title">别回头</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">48</span>
+    <span class="aplayer-list-title">半入清风半入喉</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">49</span>
+    <span class="aplayer-list-title">半生雪</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">50</span>
+    <span class="aplayer-list-title">半生风雪</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">51</span>
+    <span class="aplayer-list-title">厚颜无耻</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">52</span>
+    <span class="aplayer-list-title">叹云兮</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">53</span>
+    <span class="aplayer-list-title">叹人间</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">54</span>
+    <span class="aplayer-list-title">同进退</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">55</span>
+    <span class="aplayer-list-title">听花</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">56</span>
+    <span class="aplayer-list-title">唯一</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">57</span>
+    <span class="aplayer-list-title">壁上观</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">58</span>
+    <span class="aplayer-list-title">大笑人间</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">59</span>
+    <span class="aplayer-list-title">天亮以前说再见</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">60</span>
+    <span class="aplayer-list-title">妈妈的话</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">61</span>
+    <span class="aplayer-list-title">姑娘别哭泣</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">62</span>
+    <span class="aplayer-list-title">姑娘在远方</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">63</span>
+    <span class="aplayer-list-title">孤城</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">64</span>
+    <span class="aplayer-list-title">安和桥</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">65</span>
+    <span class="aplayer-list-title">室内系的TrackMaker</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">66</span>
+    <span class="aplayer-list-title">寄明月</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">67</span>
+    <span class="aplayer-list-title">年轮</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">68</span>
+    <span class="aplayer-list-title">归途有风</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">69</span>
+    <span class="aplayer-list-title">待我踏过彼岸花 (DJ版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">70</span>
+    <span class="aplayer-list-title">御龙定乾坤</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">71</span>
+    <span class="aplayer-list-title">循风</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">72</span>
+    <span class="aplayer-list-title">忘川彼岸 (DJ名龙版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">73</span>
+    <span class="aplayer-list-title">念</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">74</span>
+    <span class="aplayer-list-title">思念绕指尖 (DJ名龙版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">75</span>
+    <span class="aplayer-list-title">恋愛サーキュレーション</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">76</span>
+    <span class="aplayer-list-title">想你时风起</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">77</span>
+    <span class="aplayer-list-title">愿与愁</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">78</span>
+    <span class="aplayer-list-title">折芙蓉</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">79</span>
+    <span class="aplayer-list-title">折风渡夜 (DJ名龙版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">80</span>
+    <span class="aplayer-list-title">捂住耳朵 (DJ版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">81</span>
+    <span class="aplayer-list-title">提笔问飞花</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">82</span>
+    <span class="aplayer-list-title">旧梦一场</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">83</span>
+    <span class="aplayer-list-title">时光背面的我</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">84</span>
+    <span class="aplayer-list-title">明月不照离别人</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">85</span>
+    <span class="aplayer-list-title">明月天涯</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">86</span>
+    <span class="aplayer-list-title">星光就在前方</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">87</span>
+    <span class="aplayer-list-title">星月落</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">88</span>
+    <span class="aplayer-list-title">春分</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">89</span>
+    <span class="aplayer-list-title">月华落</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">90</span>
+    <span class="aplayer-list-title">月色倒映在西湖</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">91</span>
+    <span class="aplayer-list-title">本日は晴天なり</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">92</span>
+    <span class="aplayer-list-title">梦中客</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">93</span>
+    <span class="aplayer-list-title">江南烟雨色</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">94</span>
+    <span class="aplayer-list-title">江湖之间</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">95</span>
+    <span class="aplayer-list-title">江湖之间·2025</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">96</span>
+    <span class="aplayer-list-title">沈园外</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">97</span>
+    <span class="aplayer-list-title">没有意外</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">98</span>
+    <span class="aplayer-list-title">沦陷 (DJ阿幻版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">99</span>
+    <span class="aplayer-list-title">洛南·仓颉颂</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">100</span>
+    <span class="aplayer-list-title">海市蜃楼</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">101</span>
+    <span class="aplayer-list-title">游京 (燃情版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">102</span>
+    <span class="aplayer-list-title">潮汐</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">103</span>
+    <span class="aplayer-list-title">燕无歇</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">104</span>
+    <span class="aplayer-list-title">爱是无畏的冒险</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">105</span>
+    <span class="aplayer-list-title">牵丝戏 (DJ亚明版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">106</span>
+    <span class="aplayer-list-title">画离弦</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">107</span>
+    <span class="aplayer-list-title">盐渍月亮 Salty Moon</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">108</span>
+    <span class="aplayer-list-title">盗墓笔记·十年人间</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">109</span>
+    <span class="aplayer-list-title">知我</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">110</span>
+    <span class="aplayer-list-title">破茧</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">111</span>
+    <span class="aplayer-list-title">破阵舞</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">112</span>
+    <span class="aplayer-list-title">离人殇</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">113</span>
+    <span class="aplayer-list-title">离人赋 (治愈版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">114</span>
+    <span class="aplayer-list-title">离别开出花</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">115</span>
+    <span class="aplayer-list-title">笔下江湖</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">116</span>
+    <span class="aplayer-list-title">红尘回眸</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">117</span>
+    <span class="aplayer-list-title">纵此生</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">118</span>
+    <span class="aplayer-list-title">纸上风雅</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">119</span>
+    <span class="aplayer-list-title">芒种</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">120</span>
+    <span class="aplayer-list-title">花开花谢花又飞</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">121</span>
+    <span class="aplayer-list-title">若月亮没来 (DJ铁柱版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">122</span>
+    <span class="aplayer-list-title">若月亮没来</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">123</span>
+    <span class="aplayer-list-title">荒</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">124</span>
+    <span class="aplayer-list-title">莫问归期</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">125</span>
+    <span class="aplayer-list-title">落</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">126</span>
+    <span class="aplayer-list-title">诛神诀 (DJ R7版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">127</span>
+    <span class="aplayer-list-title">谁家</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">128</span>
+    <span class="aplayer-list-title">赐我</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">129</span>
+    <span class="aplayer-list-title">赤伶</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">130</span>
+    <span class="aplayer-list-title">跳楼机</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">131</span>
+    <span class="aplayer-list-title">踏山河</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">132</span>
+    <span class="aplayer-list-title">辞·九门回忆</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">133</span>
+    <span class="aplayer-list-title">过此生</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">134</span>
+    <span class="aplayer-list-title">速度与坚果 Fast &amp; Furynuts</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">135</span>
+    <span class="aplayer-list-title">遗失的心跳</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">136</span>
+    <span class="aplayer-list-title">邀</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">137</span>
+    <span class="aplayer-list-title">酒家解相思</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">138</span>
+    <span class="aplayer-list-title">醉春风 (DJ版)</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">139</span>
+    <span class="aplayer-list-title">长安姑娘</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">140</span>
+    <span class="aplayer-list-title">难却</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">141</span>
+    <span class="aplayer-list-title">难得真兄弟</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">142</span>
+    <span class="aplayer-list-title">难断</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">143</span>
+    <span class="aplayer-list-title">雾里</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">144</span>
+    <span class="aplayer-list-title">风催雨</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">145</span>
+    <span class="aplayer-list-title">飘浮</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">146</span>
+    <span class="aplayer-list-title">飞鸟和蝉</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">147</span>
+    <span class="aplayer-list-title">马步谣</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">148</span>
+    <span class="aplayer-list-title">鸳鸯戏</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+<li>
+    <span class="aplayer-list-cur" style="background-color: #e6d0b2;"></span>
+    <span class="aplayer-list-index">149</span>
+    <span class="aplayer-list-title">龙游万里</span>
+    <span class="aplayer-list-author">寻</span>
+</li>
+
+    </ol>
+</div>
+</div>
+<script>
+				  var options = {"narrow":false,"autoplay":true,"showlrc":1,"mode":"random","mutex":false,"theme":"#e6d0b2","preload":"metadata","listmaxheight":"200px","volume":0.08,"music":[{"title":"难断","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/难断.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"吹灭小山河","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/吹灭小山河.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"3 Strikes","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/3%20Strikes.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"ALL MY PEOPLE","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/ALL%20MY%20PEOPLE.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"After The Wind","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/After%20The%20Wind.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"All For Love","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/All%20For%20Love.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Baby love you","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Baby%20love%20you.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Constant Moderato","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Constant%20Moderato.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Dancing With Your Ghost","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Dancing%20With%20Your%20Ghost.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Daylight","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Daylight.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Different Lives (Explicit)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Different%20Lives%20(Explicit).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Dreamer","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Dreamer.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Drown (feat. Clinton Kane)(Alle Farben Remix)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Drown%20(feat.%20Clinton%20Kane)(Alle%20Farben%20Remix).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Fearless Pt. II","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Fearless%20Pt.%20II.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Fractures","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Fractures.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Home (Radio Edit)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Home%20(Radio%20Edit).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Lose Control","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Lose%20Control.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"MONTAGEM XONADA","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/MONTAGEM%20XONADA.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Meant To Be","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Meant%20To%20Be.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Minor Forever","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Minor%20Forever.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Montagem Nada Tropica","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Montagem%20Nada%20Tropica.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Power","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Power.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Sacred Play Secret Place","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Sacred%20Play%20Secret%20Place.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Save Me","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Save%20Me.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Secret Labs","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Secret%20Labs.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"Taped Up Heart (feat. Clara Mae)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/Taped%20Up%20Heart%20(feat.%20Clara%20Mae).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"The Hills (Slap House Mix)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/The%20Hills%20(Slap%20House%20Mix).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"WHOOPTY (Remix)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/WHOOPTY%20(Remix).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"aLIEz","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/aLIEz.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"おはなばたけ","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/おはなばたけ.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"三拜红尘凉","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/三拜红尘凉.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"不是相思是离别","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/不是相思是离别.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"东南西北中","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/东南西北中.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"乘风游","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/乘风游.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"人间惊鸿宴","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/人间惊鸿宴.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"人间烟火","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/人间烟火.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"今世债","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/今世债.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"他乡的月亮","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/他乡的月亮.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"伴你成长","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/伴你成长.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"你的答案","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/你的答案.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"使一颗心免于哀伤","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/使一颗心免于哀伤.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"关山酒 (DJ版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/关山酒%20(DJ版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"关山酒","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/关山酒.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"其实都没有","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/其实都没有.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"冬眠","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/冬眠.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"冬眠·2023","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/冬眠·2023.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"别回头","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/别回头.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"半入清风半入喉","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/半入清风半入喉.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"半生雪","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/半生雪.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"半生风雪","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/半生风雪.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"厚颜无耻","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/厚颜无耻.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"叹云兮","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/叹云兮.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"叹人间","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/叹人间.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"同进退","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/同进退.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"听花","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/听花.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"唯一","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/唯一.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"壁上观","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/壁上观.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"大笑人间","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/大笑人间.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"天亮以前说再见","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/天亮以前说再见.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"妈妈的话","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/妈妈的话.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"姑娘别哭泣","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/姑娘别哭泣.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"姑娘在远方","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/姑娘在远方.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"孤城","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/孤城.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"安和桥","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/安和桥.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"室内系的TrackMaker","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/室内系的TrackMaker.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"寄明月","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/寄明月.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"年轮","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/年轮.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"归途有风","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/归途有风.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"待我踏过彼岸花 (DJ版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/待我踏过彼岸花%20(DJ版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"御龙定乾坤","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/御龙定乾坤.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"循风","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/循风.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"忘川彼岸 (DJ名龙版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/忘川彼岸%20(DJ名龙版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"念","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/念.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"思念绕指尖 (DJ名龙版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/思念绕指尖%20(DJ名龙版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"恋愛サーキュレーション","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/恋愛サーキュレーション.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"想你时风起","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/想你时风起.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"愿与愁","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/愿与愁.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"折芙蓉","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/折芙蓉.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"折风渡夜 (DJ名龙版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/折风渡夜%20(DJ名龙版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"捂住耳朵 (DJ版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/捂住耳朵%20(DJ版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"提笔问飞花","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/提笔问飞花.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"旧梦一场","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/旧梦一场.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"时光背面的我","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/时光背面的我.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"明月不照离别人","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/明月不照离别人.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"明月天涯","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/明月天涯.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"星光就在前方","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/星光就在前方.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"星月落","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/星月落.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"春分","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/春分.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"月华落","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/月华落.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"月色倒映在西湖","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/月色倒映在西湖.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"本日は晴天なり","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/本日は晴天なり.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"梦中客","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/梦中客.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"江南烟雨色","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/江南烟雨色.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"江湖之间","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/江湖之间.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"江湖之间·2025","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/江湖之间·2025.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"沈园外","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/沈园外.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"没有意外","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/没有意外.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"沦陷 (DJ阿幻版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/沦陷%20(DJ阿幻版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"洛南·仓颉颂","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/洛南·仓颉颂.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"海市蜃楼","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/海市蜃楼.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"游京 (燃情版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/游京%20(燃情版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"潮汐","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/潮汐.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"燕无歇","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/燕无歇.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"爱是无畏的冒险","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/爱是无畏的冒险.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"牵丝戏 (DJ亚明版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/牵丝戏%20(DJ亚明版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"画离弦","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/画离弦.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"盐渍月亮 Salty Moon","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/盐渍月亮%20Salty%20Moon.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"盗墓笔记·十年人间","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/盗墓笔记·十年人间.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"知我","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/知我.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"破茧","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/破茧.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"破阵舞","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/破阵舞.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"离人殇","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/离人殇.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"离人赋 (治愈版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/离人赋%20(治愈版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"离别开出花","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/离别开出花.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"笔下江湖","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/笔下江湖.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"红尘回眸","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/红尘回眸.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"纵此生","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/纵此生.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"纸上风雅","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/纸上风雅.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"芒种","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/芒种.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"花开花谢花又飞","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/花开花谢花又飞.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"若月亮没来 (DJ铁柱版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/若月亮没来%20(DJ铁柱版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"若月亮没来","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/若月亮没来.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"荒","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/荒.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"莫问归期","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/莫问归期.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"落","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/落.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"诛神诀 (DJ R7版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/诛神诀%20(DJ%20R7版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"谁家","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/谁家.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"赐我","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/赐我.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"赤伶","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/赤伶.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"跳楼机","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/跳楼机.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"踏山河","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/踏山河.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"辞·九门回忆","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/辞·九门回忆.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"过此生","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/过此生.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"速度与坚果 Fast & Furynuts","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/速度与坚果%20Fast%20&%20Furynuts.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"遗失的心跳","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/遗失的心跳.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"邀","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/邀.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"酒家解相思","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/酒家解相思.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"醉春风 (DJ版)","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/醉春风%20(DJ版).mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"长安姑娘","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/长安姑娘.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"难却","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/难却.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"难得真兄弟","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/难得真兄弟.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"难断","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/难断.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"雾里","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/雾里.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"风催雨","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/风催雨.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"飘浮","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/飘浮.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"飞鸟和蝉","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/飞鸟和蝉.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"马步谣","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/马步谣.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"鸳鸯戏","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/鸳鸯戏.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"},{"title":"龙游万里","author":"寻","url":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/龙游万里.mp3","pic":"https://gh-proxy.org/https://raw.githubusercontent.com/njmxye/cdn_ms/refs/heads/main/1716767227197.jpg"}]};
+				  options.element = document.getElementById("aplayer-VbASGHkA");
+				  var ap = new APlayer(options);
+			    window.aplayers || (window.aplayers = []);
+				  window.aplayers.push(ap);
+			  </script>

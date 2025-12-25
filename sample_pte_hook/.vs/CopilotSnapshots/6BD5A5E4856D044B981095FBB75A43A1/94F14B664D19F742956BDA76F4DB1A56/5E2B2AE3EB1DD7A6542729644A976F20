@@ -1,0 +1,84 @@
+﻿#pragma once
+
+#include <cstdint>
+
+#define PAGE_SIZE 0x1000ULL
+
+// Minimal structures for PTE/PDE/PDPTE/PML4E 64-bit entries
+typedef union _PTE_64 {
+    uint64_t Flags;
+    struct {
+        uint64_t Present : 1;
+        uint64_t ReadWrite : 1;
+        uint64_t UserSupervisor : 1;
+        uint64_t PageWriteThrough : 1;
+        uint64_t PageCacheDisable : 1;
+        uint64_t Accessed : 1;
+        uint64_t Dirty : 1;
+        uint64_t PAT : 1;
+        uint64_t Global : 1;
+        uint64_t Ignored1 : 3;
+        uint64_t PageFrameNumber : 40;
+        uint64_t Reserved : 11;
+        uint64_t Nx : 1;
+    } Fields;
+    // provide commonly used aliases
+    uint64_t page_frame_number() const { return (Flags >> 12) & ((1ULL << 40) - 1); }
+} pte_64;
+
+// reuse same layout for higher-level entries
+typedef pte_64 pde_64;
+typedef pte_64 pdpte_64;
+typedef pte_64 pml4e_64;
+
+// CR3 structure
+typedef union _CR3 {
+    uint64_t flags;
+    struct {
+        uint64_t Reserved1 : 3;
+        uint64_t PageWriteThrough : 1;
+        uint64_t PageCacheDisable : 1;
+        uint64_t Reserved2 : 7;
+        uint64_t AddressOfPageDirectory : 40; // PFN
+        uint64_t Reserved3 : 12;
+    } bits;
+    // Provide field names used in cpp
+    uint64_t address_of_page_directory() const { return bits.AddressOfPageDirectory; }
+    // allow direct member access used in original code
+    uint64_t address_of_page_directory_raw;
+} cr3;
+
+// Provide compatibility aliases so code using .flags and .address_of_page_directory compiles
+inline cr3 cr3_from_flags(uint64_t f) {
+    cr3 r{0};
+    r.flags = f;
+    return r;
+}
+
+#if defined(_MSC_VER)
+#include <intrin.h>
+inline cr3 read_cr3() {
+    cr3 r{0};
+    r.flags = __readcr3();
+    return r;
+}
+#else
+inline cr3 read_cr3() {
+    cr3 r{0};
+    unsigned long long val = 0;
+    asm volatile ("mov %%cr3, %0" : "=r" (val));
+    r.flags = val;
+    return r;
+}
+#endif
+
+// Provide helpers to access page frame number field name used in cpp
+inline uint64_t get_page_frame_number(const pml4e_64& e) {
+    return (e.Flags >> 12) & ((1ULL << 40) - 1);
+}
+
+// Add simple macros to match original field names (for direct struct access in C++ file)
+// Note: these macros map to accessor functions above
+#define address_of_page_directory bits.AddressOfPageDirectory
+#define page_frame_number Fields.PageFrameNumber
+
