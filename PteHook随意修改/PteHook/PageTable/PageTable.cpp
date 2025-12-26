@@ -1,9 +1,9 @@
-#include<ntifs.h>
-#include<ntddk.h>
-#include<intrin.h>
-#include"../ia32/ia32.hpp" 
-#include"PageTable.h"
-#include"../HookManager/HookManager.h"
+#include <ntifs.h>
+#include <ntddk.h>
+#include <intrin.h>
+#include "../ia32/ia32.hpp" 
+#include "PageTable.h"
+#include "../HookManager/HookManager.h"
 
 #pragma warning(disable:4389)
 

@@ -44,38 +44,6 @@
  * - 1GB页面：PDPT条目直接指向1GB页面（PDPTE的PS位为1）
  */
 
-/**
- * @brief 页表条目指针结构体
- * 
- * 用于存储虚拟地址对应的各级页表条目的指针。
- * 这些指针可以直接访问和修改页表条目，实现对物理内存映射的控制。
- * 
- * @note 通过直接操作页表条目，可以：
- *       - 实现页表隔离（将目标进程的页面映射到私有页表）
- *       - 修改页面保护属性
- *       - 拆分大页面（2MB/1GB -> 4KB）
- *       - 重新映射物理内存
- */
-typedef struct _PAGE_TABLE {
-	void* VirtualAddress;                         ///< 要查询的虚拟地址
-	union {
-		pte_64* Pte;                               ///< 页表条目（PTE）指针，指向4KB页面的映射
-		pte_64* const;                             ///< PTE为常量指针，不可修改
-	} Entry;
-	union {
-		pde_64* Pde;                               ///< 页目录条目（PDE）指针，指向页表或2MB页面
-		pde_64* const;                             ///< PDE为常量指针，不可修改
-	} Entry;
-	union {
-		pdpte_64* Pdpte;                           ///< 页目录指针条目（PDPTE）指针，指向页目录或1GB页面
-		pdpte_64* const;                           ///< PDPTE为常量指针，不可修改
-	} Entry;
-	union {
-		pml4e_64* Pml4e;                           ///< PML4条目指针，指向页目录指针表
-		pml4e_64* const;                           ///< PML4E为常量指针，不可修改
-	} Entry;
-
-}PAGE_TABLE,*PPAGE_TABLE;
 
 /**
  * @brief 获取页表信息
