@@ -47,8 +47,8 @@
  * DDK = Driver Development Kit
  */
 #include <ntddk.h> 
-#include"PteHook_Simplified.h"
-
+#include "PteHook_Simplified.h"
+extern "C" {
 /* ============================================================================
  *                           宏定义与常量
  * ============================================================================ */
@@ -631,7 +631,7 @@ NTSTATUS DriverEntry(
      *   - 使用WinDbg: dbgview或内核调试
      *   - 使用DebugView工具
      */
-    DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Driver loaded successfully\n");
+    DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook]安装了驱动，你个挂狗。\n");
     
     /* 
      * 返回成功状态
@@ -717,7 +717,7 @@ void DriverUnload(
      * 好的驱动应该在关键步骤记录日志
      * 便于调试和问题排查
      */
-    DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Driver unloaded\n");
+    DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook]卸载了挂狗。\n");
 }
 
 
@@ -733,13 +733,13 @@ void DriverUnload(
  * 执行原理图示：
  * 
  *   安装前：                    安装后：
- *   ┌─────────────┐            ┌─────────────┐
+ *   ┌─────────────┐┌─────────────┐
  *   │ 原函数入口   │            │ mov rax, hook│  ← 12字节跳转指令
  *   │ [原始指令]   │            │ jmp rax      │
- *   │ ...         │            ├─────────────┤
- *                              │ 原函数继续   │  ← 由trampoline执行
- *                              │ ...         │
- *                              └─────────────┘
+ *   │ ...          │            ├─────────────┤
+ *                                 │ 原函数继续   │  ← 由trampoline执行
+ *                                 │ ...          │
+ *                                 └─────────────┘
  * 
  * Trampoline结构：
  *   ┌─────────────────────────────────────┐
@@ -791,7 +791,7 @@ BOOLEAN InstallInlineHook(
      * 防止数组越界访问
      */
     if (g_hookCount >= MAX_HOOK_COUNT) {
-        DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Max hook count reached\n");
+        DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook]你太超过了，满了不能再hook了。\n");
         return FALSE;
     }
     
@@ -818,7 +818,7 @@ BOOLEAN InstallInlineHook(
      *   3. 确保进程存在且有效
      */
     if (!NT_SUCCESS(PsLookupProcessByProcessId(pid, &process))) {
-        DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Failed to find process %p\n", pid);
+        DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook]没找着你想要的？进程，你在耍我。 %p\n", pid);
         return FALSE;
     }
     
@@ -902,7 +902,7 @@ BOOLEAN InstallInlineHook(
      * 如果解析失败，返回FALSE
      */
     if (!DisasmInstruction(targetAddr, &bytesNeeded)) {
-        DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Failed to disassemble target function\n");
+        DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] 反汇编失败了，什么鬼？\n");
         goto CLEANUP;  // 跳转到清理代码
     }
     
@@ -960,7 +960,7 @@ BOOLEAN InstallInlineHook(
          * 如果失败，释放之前分配的资源并返回
          */
         if (!g_trampolinePool) {
-            DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Failed to allocate trampoline pool\n");
+            DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] 蹦床内存分配失败，不给我分配是吧。\n");
             goto CLEANUP;
         }
         
@@ -1055,8 +1055,8 @@ BOOLEAN InstallInlineHook(
      * 在x64架构下，跳转到任意地址需要12字节：
      * 
      *   ┌──────────────────────────────────────────┐
-     *   │ 48 B8 │ [8字节地址] │ FF E0            │
-     *   │ mov   │ hook函数地址 │ jmp rax         │
+     *   │ 48 B8 │ [8字节地址] │ FF E0           │
+     *   │ mov   │ hook函数地址│ jmp rax         │
      *   │ rax,  │             │                 │
      *   │ imm64 │             │                 │
      *   └──────────────────────────────────────────┘
@@ -1125,7 +1125,7 @@ BOOLEAN InstallInlineHook(
      *   我们需要修改它，所以必须改变保护属性
      */
     if (!NT_SUCCESS(MmLockMemoryForWrite(targetAddr, PAGE_SIZE_4KB, &reprotectCtx))) {
-        DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Failed to lock memory for write\n");
+        DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] 锁写内存失败？\n");
         goto CLEANUP;
     }
     
@@ -1207,7 +1207,7 @@ BOOLEAN InstallInlineHook(
     
     /* ==================== 记录成功日志 ==================== */
     
-    DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Hook installed successfully\n");
+    DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook]钩上了，你小子，不老实。\n");
     DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Target: %p, Hook: %p, Trampoline: %p\n", 
                targetAddr, hookFunc, trampolineAddr);
     
@@ -1309,6 +1309,7 @@ BOOLEAN RemoveInlineHook(
         /* 
          * 匹配hook函数地址
          * 必须完全匹配才能卸载
+         * 初始化一个peprocess对象
          */
         if (g_hooks[i].hookAddr == hookFunc) {
             PEPROCESS process = NULL;
@@ -1358,18 +1359,18 @@ BOOLEAN RemoveInlineHook(
              */
             g_hooks[i].pid = NULL;
             
-            DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook] Hook removed successfully\n");
+            DbgPrintEx(DPFLTR_ACPI_ID, 0, "[PteHook]清理了钩子。\n");
             
             return TRUE;
         }
     }
     
     return FALSE;
-}
+  }
 
 
 /* ============================================================================
- *                           指令解析函数
+ *            指令解析函数（这我没看，用现成的hde就行，轮子而已会用就行）
  * ============================================================================ */
 
 /**
@@ -1585,6 +1586,7 @@ NTSTATUS MmLockMemoryForWrite(
          * STATUS_INSUFFICIENT_RESOURCES
          * 内存不足，无法分配MDL结构
          */
+        DbgPrintEx(DPFLTR_ACPI_ID, 0, "内存不足，IoAllocateMdl无法分配mdl结构。\n");
         return STATUS_INSUFFICIENT_RESOURCES;
     }
     
@@ -1618,6 +1620,7 @@ NTSTATUS MmLockMemoryForWrite(
     }
     __except(EXCEPTION_EXECUTE_HANDLER) {
         /* 捕获异常，释放MDL并返回错误码 */
+        DbgPrintEx(DPFLTR_ACPI_ID, 0, "锁定内存失败MmProbeAndLockPages，无法请求写模式。\n");
         return GetExceptionCode();
     }
     
@@ -1658,6 +1661,7 @@ NTSTATUS MmLockMemoryForWrite(
          * 映射失败，清理已分配的资源
          * 逆序释放：先解锁页面，再释放MDL
          */
+        DbgPrintEx(DPFLTR_ACPI_ID, 0, "映射失败MmMapLockedPagesSpecifyCache，无法将锁定的页面映射到内核空间。\n");
         MmUnlockPages(ctx->mdl);
         IoFreeMdl(ctx->mdl);
         ctx->mdl = 0;
@@ -1691,6 +1695,7 @@ NTSTATUS MmLockMemoryForWrite(
     /* 检查保护属性修改结果 */
     if (!NT_SUCCESS(status)) {
         /* 失败，清理资源 */
+        DbgPrintEx(DPFLTR_ACPI_ID, 0, "修改内存保护属性失败MmProtectMdlSystemAddress，无法将锁定的页面修改为可写。\n");
         MmUnmapLockedPages(ctx->lockedVa, ctx->mdl);
         MmUnlockPages(ctx->mdl);
         IoFreeMdl(ctx->mdl);
@@ -1870,11 +1875,11 @@ PVOID PaToVa(
  * x64虚拟地址结构：
  * 
  *   63      48 47    39 38    30 29    21 20    12 11         0
- *   ┌───────┬───────┬───────┬───────┬───────┬───────────────┐
- *   │ Sign  │ PML4  │ PDPT  │  PDE  │  PTE  │  Page Offset  │
- *   │ Extend│ Index │ Index │ Index │ Index │               │
- *   └───────┴───────┴───────┴───────┴───────┴───────────────┘
- *      16位     9位     9位     9位     9位       12位
+ *   ┌───────┬───────┬───────┬───────┬───────┬───────┐
+ *   │ Sign         │ PML4         │ PDPT         │  PDE         │  PTE         │  Page Offset │
+ *   │ Extend       │ Index        │ Index        │ Index        │ Index        │              │
+ *   └───────┴───────┴───────┴───────┴───────┴───────┘
+ *      16位                9位             9位             9位            9位            12位
  * 
  * 各级页表：
  *   - PML4（Page Map Level 4）：第1级，512个条目
@@ -1944,4 +1949,5 @@ void GetPageTableOffsets(
     
     /* PML4索引：虚拟地址 >> 39，提取bits 39-47 */
     offsets->pml4e = (pml4e_64*)((pteBase) + ((virtualAddr >> 39) & 0x1FF));
+}
 }
