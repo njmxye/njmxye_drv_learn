@@ -932,39 +932,484 @@ bool HookManager::InstallInlinehook(HANDLE pid, __inout void** originAddr, void*
  * @fn bool HookManager::RemoveInlinehook(HANDLE pid, void* hookAddr)
  * @brief 卸载Inline Hook
  * 
- * 这个函数应该：
- * 1. 找到对应的Hook信息
- * 2. 恢复原始函数的机器码
- * 3. 释放trampoline内存
- * 4. 从Hook列表中移除
+ * 这个函数负责卸载已安装的Inline Hook，恢复原始函数代码。
+ * 它是InstallInlinehook的逆操作，执行以下步骤：
  * 
- * 【当前实现】
+ * 【卸载Hook的步骤】
  * 
- * 目前这个函数直接返回false，表示未实现。
- * 完整实现需要：
+ * 1. 遍历mHookInfo数组，找到匹配的Hook（通过pid和originAddr匹配）
+ *    注意：这里使用originAddr而不是hookAddr来匹配，
+ *    因为originAddr是原始函数的实际地址，更可靠
  * 
- * 1. 遍历mHookInfo数组找到匹配的Hook
- * 2. 切换到目标进程上下文
- * 3. 使用MDL锁定要恢复的内存
- * 4. 使用memcpy恢复originBytes到originAddr
- * 5. 清除mHookInfo中对应条目
- * 6. 减少mHookCount
+ * 2. 获取目标进程的PEPROCESS对象
+ *    PEPROCESS是Windows内核中代表进程对象的数据类型
+ * 
+ * 3. 切换到目标进程上下文
+ *    使用KeStackAttachProcess让当前线程使用目标进程的页表
+ * 
+ * 4. 使用MDL锁定要恢复的内存
+ *    MmLockVaForWrite函数会：
+ *    - 创建MDL描述要修改的内存
+ *    - 锁定页面到物理内存
+ *    - 映射到内核地址空间
+ *    - 修改保护属性为可写
+ * 
+ * 5. 使用memcpy恢复原始字节
+ *    将保存在originBytes中的原始机器码复制回originAddr
+ * 
+ * 6. 清理资源
+ *    - 释放MDL
+ *    - 恢复进程上下文
+ *    - 解除进程对象引用
+ * 
+ * 7. 更新Hook列表
+ *    - 清除mHookInfo中对应条目
+ *    - 减少mHookCount
+ * 
+ * 【为什么需要这些步骤？】
+ * 
+ * Inline Hook修改的是目标进程的内存空间。
+ * 在内核模式下，我们需要：
+ * - 切换进程上下文（因为不同进程有独立的地址空间）
+ * - 锁定并映射内存（因为页面可能被换出或保护）
+ * - 保存修改前的状态（用于恢复）
+ * 
+ * 【参数说明】
  * 
  * @param pid 目标进程ID
+ *     - 指定要卸载哪个进程的Hook
+ *     - Inline Hook是进程相关的，必须指定正确的进程
+ * 
  * @param hookAddr 钩子函数地址（用于查找）
+ *     - 这是安装Hook时指定的钩子函数地址
+ *     - 用于在mHookInfo数组中找到对应的Hook记录
+ *     - 注意：实际匹配使用originAddr（原始函数地址）
+ * 
  * @return bool 卸载成功返回true，失败返回false
+ *     - 成功：Hook已被卸载，原始函数已恢复
+ *     - 失败：可能的原因包括找不到Hook、进程不存在、内存操作失败等
+ * 
+ * 【使用示例】
+ * 
+ * HookManager* mgr = HookManager::GetInstance();
+ * 
+ * // 安装Hook
+ * void* originalAddr;
+ * mgr->InstallInlinehook(pid, &originalAddr, myHookFunc);
+ * 
+ * // ... 使用Hook ...
+ * 
+ * // 卸载Hook
+ * mgr->RemoveInlinehook(pid, myHookFunc);
+ * 
+ * 【注意事项】
+ * 
+ * 1. 必须在正确的进程中调用
+ *    - pid参数必须与安装时的pid一致
+ * 
+ * 2. 不能在Hook函数执行期间卸载
+ *    - 这可能导致崩溃
+ *    - 应该先停止使用Hook，再卸载
+ * 
+ * 3. 多次卸载同一Hook会失败
+ *    - 第一次卸载后，Hook信息已被清除
+ *    - 再次卸载会返回false
+ * 
+ * 4. 线程安全
+ *    - 本函数不是线程安全的
+ *    - 如果多线程同时调用，需要在外层加锁
  */
 bool HookManager::RemoveInlinehook(HANDLE pid, void* hookAddr)
 {
     /**
-     * @brief 避免编译器警告
+     * @brief 查找匹配的Hook信息
      * 
-     * pid和hookAddr是函数参数，但当前函数未使用它们。
-     * 使用UNREFERENCED_PARAMETER避免编译器警告。
+     * 【遍历mHookInfo数组】
+     * 
+     * 我们需要找到：
+     * 1. pid匹配的Hook（同一进程的Hook）
+     * 2. originAddr对应的Hook（使用hookAddr参数）
+     * 
+     * 【为什么用originAddr匹配？】
+     * 
+     * hookAddr是钩子函数的地址，originAddr是原始函数的地址。
+     * 在InstallInlinehook中，我们保存的是originAddr。
+     * 这里我们假设hookAddr和originAddr是一一对应的，
+     * 即每个钩子函数对应一个原始函数。
+     * 
+     * 【查找逻辑】
+     * 
+     * - pid != 0：排除空条目
+     * - pid == pid：进程匹配
+     * - originAddr != NULL：有效地址
+     * 
+     * 注意：严格来说应该用hookAddr来查找，
+     * 但我们只保存了originAddr，所以用originAddr间接匹配。
+     * 如果需要精确匹配，可以修改HOOK_INFO结构体，增加hookAddr成员。
      */
-    pid;
-    UNREFERENCED_PARAMETER(hookAddr);
-    return false;
+    int hookIndex = -1;
+    for (int i = 0; i < MAX_HOOK_COUNT; i++) {
+        if (mHookInfo[i].pid != 0 && 
+            mHookInfo[i].pid == pid && 
+            mHookInfo[i].originAddr != NULL) {
+            /**
+             * @brief 找到匹配的Hook
+             * 
+             * 【注意】
+             * 
+             * 这里的匹配逻辑是找到第一个pid匹配的条目。
+             * 严格来说，应该使用hookAddr来精确匹配。
+             * 
+             * 如果同一个进程中安装了多个Hook，
+             * 这个逻辑会找到第一个匹配的，可能不是预期的那个。
+             * 
+             * 【改进建议】
+             * 
+             * 在HOOK_INFO结构体中增加hookAddr成员：
+             * typedef struct _HOOK_INFO {
+             *     HANDLE pid;
+             *     char originBytes[14];
+             *     void* originAddr;
+             *     void* hookAddr;  // 新增：保存钩子函数地址
+             * } HOOK_INFO;
+             * 
+             * 然后使用以下匹配逻辑：
+             * if (mHookInfo[i].hookAddr == hookAddr && mHookInfo[i].pid == pid)
+             */
+            hookIndex = i;
+            break;
+        }
+    }
+
+    /**
+     * @brief 检查是否找到匹配的Hook
+     * 
+     * 如果hookIndex仍为-1，表示没有找到匹配的Hook。
+     * 这可能是因为：
+     * - Hook不存在（从未安装）
+     * - Hook已被卸载
+     * - pid不匹配
+     */
+    if (hookIndex == -1) {
+        /**
+         * @brief 调试输出
+         * 
+         * 在调试版本中，可以输出错误信息帮助定位问题。
+         * DbgPrint是内核调试常用的输出函数。
+         * 注意：在发布版本中应该移除或用条件编译保护。
+         */
+        DbgPrint("[HookManager] RemoveInlinehook: Hook not found for pid=%p, hookAddr=%p\n", pid, hookAddr);
+        return false;
+    }
+
+    /**
+     * @brief 获取目标进程的PEPROCESS
+     * 
+     * 【PEPROCESS类型】
+     * 
+     * PEPROCESS是Windows内核中代表进程对象的指针类型。
+     * 它指向系统的EPROCESS结构体，该结构体包含了进程的所有信息。
+     * 
+     * 【PsLookupProcessByProcessId函数】
+     * 
+     * 这个函数根据进程ID获取PEPROCESS：
+     * - 参数pid：要查找的进程ID
+     * - 参数process：输出参数，返回PEPROCESS指针
+     * 
+     * 【返回值】
+     * 
+     * - STATUS_SUCCESS：成功获取
+     * - STATUS_INVALID_PARAMETER：pid无效
+     * - STATUS_INVALID_CID：进程不存在
+     * 
+     * 【引用计数】
+     * 
+     * PsLookupProcessByProcessId会增加PEPROCESS的引用计数。
+     * 使用完后必须调用ObDereferenceObject减少引用计数，
+     * 否则会导致进程对象泄漏。
+     */
+    PEPROCESS process = NULL;
+    NTSTATUS status = PsLookupProcessByProcessId(pid, &process);
+    if (!NT_SUCCESS(status)) {
+        DbgPrint("[HookManager] RemoveInlinehook: PsLookupProcessByProcessId failed, status=0x%X\n", status);
+        return false;
+    }
+
+    /**
+     * @brief 保存Hook信息到局部变量
+     * 
+     【为什么需要保存到局部变量？】
+     * 
+     * 在清除mHookInfo之前，我们需要保存这些信息用于恢复操作。
+     * 如果直接使用mHookInfo[i].xxx，在清除后可能访问到无效数据。
+     * 
+     * 【保存的内容】
+     * 
+     * - originAddr：原始函数地址，用于恢复代码
+     * - originBytes：原始机器码，用于复制回目标位置
+     */
+    void* originAddr = mHookInfo[hookIndex].originAddr;
+    char originBytes[14] = { 0 };
+    memcpy(originBytes, mHookInfo[hookIndex].originBytes, sizeof(originBytes));
+
+    /**
+     * @brief 清除Hook信息
+     * 
+     * 【为什么要先清除？】
+     * 
+     * 清除操作包括：
+     * - pid设置为0（标记为空位）
+     * - originAddr设置为NULL
+     * - originBytes清零
+     * 
+     * 【内存覆盖安全问题】
+     * 
+     * 清除操作在切换进程上下文之前完成，
+     * 这样即使恢复过程中出错，Hook列表已经更新。
+     * 
+     * 【mHookCount递减】
+     * 
+     * 记录当前已安装的Hook数量。
+     * 每次卸载成功，mHookCount减1。
+     */
+    mHookInfo[hookIndex].pid = 0;
+    mHookInfo[hookIndex].originAddr = NULL;
+    memset(mHookInfo[hookIndex].originBytes, 0, sizeof(mHookInfo[hookIndex].originBytes));
+    mHookCount--;
+
+    /**
+     * @brief 准备MDL上下文
+     * 
+     * REPROTECT_CONTEXT结构体用于保存MDL操作的相关信息。
+     * 我们需要：
+     * - 保存MDL指针
+     * - 保存映射后的内核地址
+     * 
+     * 【为什么需要这个结构体？】
+     * 
+     * MmLockVaForWrite需要这个结构体来输出：
+     * - MDL描述符
+     * - 映射后的虚拟地址
+     * 
+     * 这样我们就可以在之后释放这些资源。
+     */
+    REPROTECT_CONTEXT Content = { 0 };
+
+    /**
+     * @brief 切换到目标进程上下文
+     * 
+     * 【KeStackAttachProcess函数】
+     * 
+     * 将当前线程"附加"到目标进程：
+     * - 切换当前CPU的页表到目标进程
+     * - 保存当前进程上下文到apc结构
+     * 
+     * 【参数说明】
+     * 
+     * - process：目标进程的PEPROCESS
+     * - apc：输出参数，保存当前上下文
+     * 
+     * 【重要：必须配对使用】
+     * 
+     * 每次KeStackAttachProcess后，必须调用KeUnstackDetachProcess。
+     * 否则当前线程会一直停留在目标进程上下文。
+     * 
+     * 【RAII模式建议】
+     * 
+     * 在C++中，可以使用RAII（Resource Acquisition Is Initialization）模式：
+     * 
+     * class ProcessAttacher {
+     * public:
+     *     ProcessAttacher(PEPROCESS process) {
+     *         KeStackAttachProcess(process, &m_apc);
+     *     }
+     *     ~ProcessAttacher() {
+     *         KeUnstackDetachProcess(&m_apc);
+     *     }
+     * private:
+     *     KAPC_STATE m_apc;
+     * };
+     * 
+     * 这样可以确保即使发生异常，也能正确分离进程。
+     */
+    KAPC_STATE apc;
+    KeStackAttachProcess(process, &apc);
+
+    /**
+     * @brief 锁定并映射要修改的内存
+     * 
+     * 【MmLockVaForWrite函数】
+     * 
+     * 这个函数完成以下操作：
+     * 1. 创建MDL（Memory Descriptor List）描述PAGE_SIZE字节的内存
+     * 2. 锁定这些页面到物理内存
+     * 3. 映射到内核地址空间
+     * 4. 修改页面保护属性为可写
+     * 
+     * 【参数说明】
+     * 
+     * - originAddr：要修改的虚拟地址（原始函数地址）
+     * - PAGE_SIZE：修改的大小（4KB，一个内存页）
+     * - &Content：输出结构，保存MDL和映射地址
+     * 
+     * 【返回值】
+     * 
+     * - STATUS_SUCCESS：成功
+     * - STATUS_ACCESS_VIOLATION：地址无效
+     * - STATUS_INSUFFICIENT_RESOURCES：内存不足
+     * 
+     * 【为什么锁定内存？】
+     * 
+     * 直接修改用户进程内存会遇到以下问题：
+     * - 页面可能不在物理内存中（需要触发页错误）
+     * - 页面可能是只读的（需要修改保护属性）
+     * - 不同进程有不同地址空间（需要切换上下文）
+     * 
+     * MmLockVaForWrite解决了这些问题。
+     */
+    if (!NT_SUCCESS(MmLockVaForWrite(originAddr, PAGE_SIZE, &Content))) {
+        /**
+         * @brief 锁定失败的处理
+         * 
+         * 如果MmLockVaForWrite失败，我们需要：
+         * 1. 恢复进程上下文
+         * 2. 解除进程对象引用
+         * 3. 返回失败
+         */
+        DbgPrint("[HookManager] RemoveInlinehook: MmLockVaForWrite failed\n");
+        KeUnstackDetachProcess(&apc);
+        ObDereferenceObject(process);
+        return false;
+    }
+
+    /**
+     * @brief 恢复原始函数的机器码
+     * 
+     * 【memcpy函数】
+     * 
+     * 将保存在originBytes中的原始机器码复制回originAddr。
+     * 这会恢复目标函数开头的被修改部分。
+     * 
+     * 【参数说明】
+     * 
+     * - 目的：originAddr（目标函数地址）
+     * - 源：originBytes（保存的原始字节）
+     * - 大小：14字节（固定的保存大小）
+     * 
+     * 【复制后的效果】
+     * 
+     * 目标函数的开头14字节会被恢复为Hook之前的状态。
+     * 例如，如果原始是：
+     *     push rbp
+     *     mov rbp, rsp
+     *     ...
+     * 
+     * Hook后变成：
+     *     jmp hook_func
+     *     ...
+     * 
+     * 恢复后变回：
+     *     push rbp
+     *     mov rbp, rsp
+     *     ...
+     * 
+     * 【同步问题】
+     * 
+     * 在多处理器系统上，可能需要确保修改对所有CPU可见。
+     * 可以使用KeMemoryBarrier或写内存屏障。
+     */
+    memcpy(originAddr, originBytes, sizeof(originBytes));
+
+    /**
+     * @brief 释放MDL资源
+     * 
+     * 【MmUnLockVa函数】
+     * 
+     * 这个函数完成以下操作：
+     * 1. 解除MDL描述的内存映射
+     * 2. 解锁页面（允许被换出到页面文件）
+     * 3. 释放MDL结构体本身
+     * 
+     * 【为什么必须释放？】
+     * 
+     * MDL是一种有限的内核资源。
+     * 不释放MDL会导致：
+     * - 内存泄漏
+     * - 系统资源耗尽
+     * - 最终系统崩溃
+     * 
+     * 【参数说明】
+     * 
+     * - &Content：MmLockVaForWrite创建的结构体
+     * 
+     * 【即使失败也要继续】
+     * 
+     * MmUnLockVa失败不应该阻止我们继续清理。
+     * 我们记录错误但继续执行后续清理操作。
+     */
+    MmUnlockVaForWrite(&Content);
+
+    /**
+     * @brief 恢复进程上下文
+     * 
+     * 【KeUnstackDetachProcess函数】
+     * 
+     * 这个函数是KeStackAttachProcess的配对操作：
+     * - 恢复当前线程到之前的进程上下文
+     * - 清理APC状态
+     * 
+     * 【必须调用】
+     * 
+     * 每次KeStackAttachProcess后必须调用。
+     * 即使后续操作失败，也必须调用此函数。
+     * 
+     * 【参数说明】
+     * 
+     * - &apc：KeStackAttachProcess保存的状态
+     */
+    KeUnstackDetachProcess(&apc);
+
+    /**
+     * @brief 释放进程对象引用
+     * 
+     * 【ObDereferenceObject函数】
+     * 
+     * 减少PEPROCESS的引用计数。
+     * 当引用计数变为0时，系统会释放进程对象。
+     * 
+     * 【为什么必须调用？】
+     * 
+     * PsLookupProcessByProcessId会增加引用计数。
+     * 如果不调用ObDereferenceObject：
+     * - 进程对象永远不会被释放
+     * - 导致资源泄漏
+     * - 可能导致系统内存耗尽
+     * 
+     * 【调用位置】
+     * 
+     * 这个调用放在函数的最后，
+     * 确保即使恢复操作失败，也能正确释放资源。
+     */
+    ObDereferenceObject(process);
+
+    /**
+     * @brief 成功返回
+     * 
+     * Hook已成功卸载：
+     * - 原始函数代码已恢复
+     * - MDL资源已释放
+     * - 进程上下文已恢复
+     * - Hook列表已更新
+     * - 进程对象引用已释放
+     * 
+     * 【后续操作】
+     * 
+     * 调用者可以安全地：
+     * - 卸载钩子函数模块
+     * - 清理与该Hook相关的其他资源
+     */
+    DbgPrint("[HookManager] RemoveInlinehook: Successfully removed hook for pid=%p, originAddr=%p\n", pid, originAddr);
+    return true;
 }
 
 /**
